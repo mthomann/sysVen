@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+ <a class="btn btn-default" href="/">Back to sysVentury</a>
+ <hr>
+ <h2 class="page-header">{{sysventory.name}}</h2>
+ <ul class="list-group">
+ <li class="list-group-item">Category: {{sysventory.category}}</li>
+ <li class="list-group-item">date: <strong>{{sysventory.date|date('F j, Y, g:i a')}}</strong></li>
+
+ </ul>
+{% endblock %}
